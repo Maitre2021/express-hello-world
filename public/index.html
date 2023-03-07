@@ -1,33 +1,617 @@
 <!doctype html>
-<html lang=en>
-  <head>
-    <meta charset=utf-8>
-    <title>Cyclic: Hello World</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/main.css">
-    <link rel="icon" href="/favicon.ico" />
-  </head>
-  <body>
-    <div id="hello-wrapper">
-      <div id="particles-js"></div>
-      <div class="content position-absolute w-100 top-0 pt-5">
-        <div class="cta">
-          <div id="hello" class="typewriter pb-3">
-            Hello World!
-          </div>
-          <a class="btn btn-primary mb-5" href="//app.cyclic.sh/api/login">Sign in to Cyclic</a>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicone.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Brink-finance</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p> <i class='bx bxs-envelope'></i>brinkfinance765@gmail.com</p>
+                    <p> <i class='bx bxs-phone-call'></i><a href="https://wa.me/+393510138370">+393510138370</i></a></p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
         </div>
-        <div id="world">
-          <canvas id='rotatingGlobe' style='cursor: move;'></canvas>
-        </div>
-      </div>
     </div>
-    <script type='text/javascript' src='//d3js.org/d3.v3.min.js'></script>
-    <script type='text/javascript' src='//d3js.org/topojson.v1.min.js'></script>
-    <script type='text/javascript' src='planetaryjs.min.js'></script>
-    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script type='text/javascript' src='particles.js'></script>
-    <script type='text/javascript' src='globe.js'></script>
-  </body>
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brink Finance<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Nos Avis</a>
+                    </li>
+                    <li class="nav-item">
+             <!--          <a class="nav-link" href="#team">hem ?</a>--> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Bourse Familliale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Carte</a>
+                    </li>
+                </ul>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-brand ms-lg-3">Demander votre Bourse</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h6 class="text-white text-uppercase">Le Crédit pous tous!</h6>
+                        <h1 class="display-3 my-4">Brink Finance<br /></h1>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="btn btn-brand ms-lg-3">Demander votre Bourse</a>
+                      
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-white">
+                        <center><h6 class="text-white text-uppercase">Brink Finance, laissez-nous vous faire gagner du temps et de l’argent. <br> Investissez votre temps et vos efforts dans la gestion de votre entreprise, laissez-nous la gestion de votre finance.</h6></center>
+                        <center><h1 class="display-3 my-4">Brink Finance<br /></h1></center>
+                        <center><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="btn btn-brand ms-lg-3">Demander votre Bourse</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 py-5">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="info-box">
+                                <img src="img/icon6.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Notre missions</h5>
+                                    <p>Etre l’une des principales sources de financement et de connaissances pour les pays en développement et nous partageons la même volonté de lutter contre la pauvreté, d’accroître la prospérité partagée et de promouvoir un développement durable.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="img/icon4.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Ce que nous faisons</h5>
+                                    <p>Nous aidons les propriétaires d’entreprise à gérer le processus de recherche, d’évaluation et d’obtention du prêt commercial dont ils ont besoin pour démarrer, développer ou refinancer leur entreprise</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="img/icon5.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Nos objectifs</h5>
+                                    <p>Aider des millions de personnes en détresse à obtenir un financement pour démarrer un projet, résoudre des situations, à obtenir des bourses familiales, participer et obtenir des dons ou subvention de fin d’année.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MILESTONE -->
+    <section id="milestone"> <!--
+        <div class="container">
+            <div class="row text-center justify-content-center gy-4">
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">90K+</h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">45M</h1>
+                    <p class="mb-0">Lines of code</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">190</h1>
+                    <p class="mb-0">Total Downloads</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">380K</h1>
+                    <p class="mb-0">YouTube Subscribers</p>
+                </div>
+            </div>
+        </div>-->
+    </section>
+
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Nos Services</h6>
+                        <h1>Nos Services</h1>
+                        <p class="mx-auto">Tout ce que nous faisons vise à créer de la valeur pour nos clients en leur faisant gagner du temps, de l’argent e. Principaux avantages que nous offrons</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon1.png" alt="">
+                        <h5>Réseau de prêteurs de qualité</h5>
+                        <p> Il est essentiel de sélectionner le bon prêteur pour votre prêt commercial. Le bon prêteur fournira plus que du financement. Le mauvais rendra les tâches les plus faciles difficiles. Nous le savons et affinons continuellement notre réseau pour n’inclure que les prêteurs qui comprennent vraiment l’importance qu’ils jouent dans les prêts aux entreprises.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon2.png" alt="">
+                        <h5>Service personnalisé </h5>
+                        <p>la technique est géniale. Un service personnalisé combiné à la technique, c’est mieux.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon3.png" alt="">
+                        <h5>Comprendre votre entreprise</h5>
+                        <p>le succès des prêts aux entreprises consiste à écouter, développer et communiquer l’histoire des prêts de l’entreprise. Chaque prêteur à des préférences concernant le type d’histoire qu’il souhaite financer. Notre équipe vous aidera à élaborer votre histoire et à la présenter au public de prêt le plus réceptif.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon4.png" alt="">
+                        <h5>Être un point de contact unique</h5>
+                        <p>Trouver et obtenir la meilleure solution de prêt commercial disponible nécessite d’explorer de nombreuses options de prêt et de travailler avec divers prêteurs. Nos clients nous expliquent leur métier une fois. Nous partons de là et agissons comme votre point de contact unique.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon5.png" alt="">
+                        <h5>Gestion de l’ensemble du processus de prêt</h5>
+                        <p>Vous gérez votre entreprise. Nous exécuterons l’ensemble du processus de prêt.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon6.png" alt="">
+                        <h5>Trouver le bon prêteur</h5>
+                        <p>De nombreux prêteurs « offrent » leurs services à un large public d’entreprises, mais ne « rivalisent » que pour les emprunteurs qui répondent aux préférences de financement du prêteur. Ces préférences changent avec le temps et sont influencées par les zones géographiques, les industries, la taille des prêts et d’autres caractéristiques des emprunteurs. Nous travaillerons avec vous pour trouver le ou les prêteurs dont les préférences correspondent au profil de votre entreprise. Cela rend le processus de prêt plus facile, plus efficace et vous offre les meilleures conditions de prêt disponibles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Nos Avis</h6>
+                        <h1>Ils se sont confiés à nous,</h1>
+                        <p class="mx-auto">nous avont changer leur vie ,ils ont decidez de temoigner pour nous,une fois encore Brink Finance les remerçies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects-slider" class="owl-theme owl-carousel">
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/2.jpg" alt="">
+                <div class="content">
+                    <h2>Faisath:36 ans</h2>
+                    <h6>Tient un salon de beauté “Trésors de la nature” (Rabat, Maroc)</h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/rtt.jpg" alt="">
+                <div class="content">
+                    <h2>Alice 41 ans</h2>
+                    <h6>Maman célibataire (Lyon, france)</h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/ttt.jpg" alt="">
+                <div class="content">
+                    <h2> Hector 41 ans</h2>
+                    <h6> Propriétaires  d'une Ferme(Turin, Italie)</h6>
+                </div>
+            </div>
+         <!--   <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project4.jpg" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6>Website Design</h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project5.jpg" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6>Website Design</h6>
+                </div>  -->
+            </div>
+        </div>
+    </section>
+<!--
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Team</h6>
+                        <h1>Team Members</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/team_1.jpg" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Marvin McKinney</h5>
+                        <p>Marketing Coordinator</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/team_2.jpg" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Kathryn Murphy</h5>
+                        <p>Ethical Hacker</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/team_3.jpg" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Darrell Steward</h5>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <section class="bg-light" id="reviews">
+
+        <div class="owl-theme owl-carousel reviews-slider container">
+            <div class="review">
+                <div class="person">
+                    <h5>La Bourse familiale </h5>
+                    <small> Pourquoi avoir une Bourse</small>
+                </div>
+                <h3>La bourse familiale est une allocation non remboursable octroyée par l'Union européenne en collaboration avec la Banque mondiale, l'UNICEF, les institutions financières, les donateurs anonymes dans le seul but d'aider les familles, citoyens pauvres.</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <h5>L'objectif de la bourse familiale ?</h5>
+                    <small> Elle vous Garantit</small>
+                </div>
+                <h3>Une aide financière est un facteur important pour de nombreuses familles afin de s’assurer que leurs enfants puissent aller à l’école, sortir du chômage, du sous-emploi ou plus généralement de a leur besoins.L’objectif de l’aide financière est d’aider la famille à devenir autonome et à subvenir à ses besoins à court terme. Il est important car il permet au personne d’accéder à des formations, de lancer une activité génératrices de revenue pour sortir du chômage ou du sous emploi.</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <h5>A qui est destiné la bourse familiale ?</h5>
+                    <small>Vous devez savoir</small>
+                </div>
+                <h3>Qu'il est évident qu'elle n'est pas destiné à tout le monde, elle est destiné aux familles et aux citoyens ayant un certain statut et vivant dans des pays spécifiques. En 2023, Brink-finance octroiera des bourses familiales aux familles et aux citoyens habitant au Portugal, à Finlance, en Italie, en Allemagne et dans d'autres pays.Veuillez nous contactez pour en savoir plus. </h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Nos carte</h6>
+                        <h1>Carte Bancaire</h1>
+                        <p class="mx-auto">Profitez pleinement de votre carte et de ces avantages. <br> <h1>Bénéficiez des cartes bancaires</h1> <br>Visa Classic, Visa Premier, Visa Infinite : découvrez celle qui vous conviendra le mieux selon vos besoins. </p>
+                            
+        
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/rouge.png" alt="">
+                        <a href="#" class="tag">Obtenir</a>
+                        <div class="content">
+                            <small>Visa Classic</small>
+                            <h5>0€/an</h5>
+                            <p>Pratique, gratuite et idéale pour les paiements du quotidien.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/bleue.png" alt="">
+                        <a href="#" class="tag">Obtenir</a>
+                        <div class="content">
+                            <small>Visa Premier</small>
+                            <h5>0€/an</h5>
+                            <p>Tous les avantages d’une carte bancaire haut de gamme.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/noir.png" alt="">
+                        <a href="#" class="tag">Obtenir</a>
+                        <div class="content">
+                            <small>Visa Infinite</small>
+                            <h5>240€/an</h5>
+                            <p>Vers l’infini… et au-delà grâce à ses prestations exclusive </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="navbar-brand">Brink Finance.<span class="dot">.</span></h4>
+                        <p>Vous aviez des questions à propos de notre banque ? n’hésitez pas contactez notre service clients</p>
+                        <div class="col-auto social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                        <div class="col-auto conditions-section">
+                            <a href="#">privé</a>
+                            <a href="#">terme</a>
+                            <a href="https://wa.me/+393510138370">Nous Contacter</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0">© Brink Finance, All Right Reserved.</p> 
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-sm-12 bg-cover"
+                                style="background-image: url(img/c2.jpg); min-height:300px;">
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <form class="p-lg-5 col-12 row g-3" id="myform" action="https://formspree.io/f/xzbqgzze" method="POST">
+                                    <div>
+                                        <h1>Veuillez remplir le Formulaire</h1>
+                                        <center><p> En remplissant le formulaire vous acceptez payer les frais de demande et constitution de dossier pour la demande de bourse familliale qui <br> s'élèvent de 490 euro </p></center>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Nom</label>
+                                        <input type="text" class="form-control" placeholder="Votre Nom" id="userName"
+                                          name="Nom"   aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Prenom</label>
+                                        <input type="text" class="form-control" name="Prenom" placeholder="Votre Prenom" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Profession</label>
+                                        <input type="text" class="form-control" name="Profession" placeholder="Votre Emploi" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Adresse</label>
+                                        <input type="text" class="form-control" name="Adresse" placeholder="Votre Adresse" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Numero</label>
+                                        <input type="text" class="form-control" name="Numero" placeholder="+33-000000000" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Pays</label>
+                                        <input type="text" class="form-control" name="Pays" placeholder="Votre Pays" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Nombre d'enfants</label>
+                                        <input type="text" class="form-control" name="Nombre-Enfant" placeholder="Ex:01" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Situations Matrimonial</label>
+                                        <input type="text" class="form-control" name="Situations-Matrimonial" placeholder="Ex:célibataire" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Email</label>
+                                        <input type="email" class="form-control" placeholder="nom@gmail.com"
+                                           name="Email" id="userName" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Expliquer en Quelque ligne Pourquoi vous avez besoin de la Bourse</label>
+                                        <textarea name="" placeholder="Vos arguments ....."
+                                          name="Argument"  class="form-control" id="" rows="4"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-brand">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+		var form = document.getElementById("myform");
+		
+		async function handleSubmit(event) {
+		  event.preventDefault();
+		  var data = new FormData(event.target);
+		  fetch(event.target.action, {
+			method: form.method,
+			body: data,
+			headers: {
+				'Accept': 'application/json'
+			}
+		  }).then(response => {
+			if (response.ok) {
+			  
+			  form.reset();
+			  window.location = "/";
+			} else {
+			  response.json().then(data => {
+				if (Object.hasOwn(data, 'errors')) {
+				  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+				} else {
+				  status.innerHTML = "Oops! There was a problem submitting your form"
+				}
+			  })
+			}
+		  }).catch(error => {
+			status.innerHTML = "Oops! There was a problem submitting your form"
+		  });
+		}
+		form.addEventListener("submit", handleSubmit)
+	</script>
+</body>
+
 </html>
